@@ -1,11 +1,7 @@
 {
-  "name": "My Go App",
   "build": {
-    "command": "go build -o my-app"
-  },
-  "functions": {
-    "my-app": {
-      "handler": "my-app"
+    "env": {
+      "GO_BUILD_FLAGS": "-ldflags '-s -w'"
     }
   }
 }
